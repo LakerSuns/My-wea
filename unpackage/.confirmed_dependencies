@@ -1,0 +1,37 @@
+{
+  "index.html": {
+    "resources": [
+      "img/makeup.png",
+      "img/screen.png",
+      "img/car.png",
+      "img/3.png",
+      "css/index.css",
+      "img/transport.png",
+      "img/1.png",
+      "img/washcar.png",
+      "img/0.png",
+      "img/comfort.png",
+      "img/ultraviolet.png",
+      "img/exercise.png",
+      "img/umbrella.png",
+      "img/allergic.png",
+      "img/2.png",
+      "img/medicine.png",
+      "img/fishing.png",
+      "img/8.png",
+      "img/sosuo.png",
+      "img/clothing.png",
+      "img/7.png",
+      "img/coat.png",
+      "js/rem.js",
+      "img/sports.png",
+      "img/logo1.png",
+      "img/aircondition.png",
+      "js/index.js",
+      "js/jquery3.2.1.min.js",
+      "img/travel.png",
+      "img/4.png",
+      "img/29.png"
+    ]
+  }
+}

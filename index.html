@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Tencent weather</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="icon shortcut" href="img/logo1.png">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_603303_9sbzsw2l0356zuxr.css">
+	<script src="js/rem.js"></script>
+	<script src="js/jquery3.2.1.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<header>
+	<div class="head">
+	<div class="head-left">
+		<i class="iconfont icon-fanhui"></i>
+	</div>
+		<div class="city">
+		<i class="iconfont icon-dingwei"></i>
+		北京市 海淀区</div>
+		<div class="head-right">
+			<i class="iconfont icon-iconfontfenxiang2"></i>
+		</div>
+	</div>
+		<div class="airbox">
+			<h1>空气</h1>
+			<h2>轻度污染</h2>
+		</div>
+		<div class="temperature">10°</div>
+		<div class="condition">晴</div>
+		<div class="humidity">
+		<div class="h-text">湿度</div>
+		<div class="h-data">57%</div>
+		</div>
+		<div class="text1">你若安好，便是晴天~</div>
+	</header>
+	<!-- 今明两天天气开始-->
+	<div class="forecast">
+	 <div class="forecast1">
+		<div class="forecast1-left">
+			<div class="left-top">
+				<div class="today">今天</div>
+				<div class="difference1">
+				 <span id="tht">17</span>
+				 <span>/</span>
+				 <span id="tlt">3°</span>
+				</div>
+			</div>
+			<div class="left-bottom">
+				<div class="left-bottom-cond">晴转多云</div>
+				<div class="tubiao1">
+				</div>
+			</div>
+		</div>
+		<div class="forecast1-right">
+			<div class="right-top">
+				<div class="tomorrow">明天</div>
+				<div class="difference2">
+				 <span id="toht">17</span>
+				 <span>/</span>
+				 <span id="tolt">5°</span>
+				</div>
+			</div>
+			<div class="right-bottom">
+				<div class="right-bottom-cond">多云</div>
+				<div class="tubiao2"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- 今明两天天气结束-->
+
+	<!-- 未来24小时整点天气开始 -->
+	<section class="hours">
+	<div class="wrap">
+		</div>
+	</section>
+	<!-- 未来24小时整点天气结束 -->
+
+	<!-- 本周天气开始 -->
+	<section class="week">
+		<div class="wrap1">
+		</div>
+	</section>
+	<!-- 本周天气结束 -->
+
+
+	<!-- 城市或景点定位开始 -->
+	<section class="location">
+		<div class="search">
+			<div class="search-left">
+				<div class="sosuo"></div>
+				<div class="sosuo-text">
+					<input type="text" id="bt1" placeholder="搜索景点/地区">
+					<input type="button" id="bt2" value="获取" />
+				</div>
+			</div>
+			
+			<a href="" class="search-right">取消</a>
+			</div>
+		<div class="popcity">
+
+			<div class="remencity">
+			<span>热门城市</span></div>
+			<div class="chengshi">北京</div>
+			<div class="chengshi">上海</div>
+			<div class="chengshi">广州</div>
+			<div class="chengshi">深圳</div>
+			<div class="chengshi">成都</div>
+			<div class="chengshi">西安</div>
+			<div class="chengshi">南京</div>
+			<div class="chengshi">昆明</div>
+			<div class="chengshi">沈阳</div>
+			
+
+			<div class="popspot">
+				<div class="remenspot">
+			<span>热门景点</span></div>
+			<div class="jingdian">故宫</div>
+			<div class="jingdian">颐和园</div>
+			<div class="jingdian">九寨沟</div>
+			<div class="jingdian">凤凰古城</div>
+			<div class="jingdian">秦始皇陵</div>
+			<div class="jingdian">龙门石窟</div>
+			<div class="jingdian">武陵源</div>
+			<div class="jingdian">华山</div>
+			<div class="jingdian">黄山</div>
+		</div>
+		</div>
+		
+	</section>
+	<!-- 城市或景点定位结束 -->
+
+	<!-- 百分比布局S -->
+    <ul class="about">
+    <div class="wrap3">
+    	<li><div class="l-img1"></div>
+			<h1>3和8</h1>
+			<h2>尾号限行</h2></li>
+    	<li>
+			<div class="l-img2">
+			</div>
+			<h1>较冷</h1>
+			<h2>穿衣</h2></li><li>
+			<div class="l-img3"></div>
+			<h1>不带伞</h1>
+			<h2>雨伞</h2></li><li>
+			<div class="l-img4"></div>
+			<h1>较易发</h1>
+			<h2>感冒</h2></li>
+		    <!-- 第5-8个 -->
+            <li>
+			<div class="l-img5"></div>
+			<h1>一般</h1>
+			<h2>旅游</h2></li><li>
+			<div class="l-img6"></div>
+			<h1>很差</h1>
+			<h2>交通</h2></li><li>
+			<div class="l-img7"></div>
+			<h1>很差</h1>
+			<h2>空气污染扩散条件</h2></li><li>
+			<div class="l-img8"></div>
+			<h1>舒适</h1>
+			<h2>舒适度</h2></li>
+		<!-- 第9-12个 -->
+			<li>
+			<div class="l-img9"></div>
+			<h1>较适宜</h1>
+			<h2>洗车</h2></li><li>
+			<div class="l-img10"></div>
+			<h1>适宜</h1>
+			<h2>运动</h2></li><li>
+			<div class="l-img11"></div>
+			<h1>较弱</h1>
+			<h2>防晒</h2></li><li>
+			<div class="l-img12"></div>
+			<h1>适宜</h1>
+			<h2>钓鱼</h2></li>
+			<!-- 第13-16个 -->
+			<li>
+			<div class="l-img13"></div>
+			<h1>不宜</h1>
+			<h2>晾晒</h2></li><li>
+			<div class="l-img14"></div>
+			<h1>保湿</h1>
+			<h2>化妆</h2></li><li>
+			<div class="l-img15"></div>
+			<h1>不宜</h1>
+			<h2>晨练</h2></li><li>
+			<div class="l-img16"></div>
+			<h1>易发</h1>
+			<h2>过敏</h2></li>
+			</div>
+    </ul>
+	<!-- 百分比布局E -->
+<footer>
+	<div class="f-box1">
+		<div class="f-box1-left">数据来源于中国天气网</div>
+		<div class="f-box1-right">反馈 | 举报中心</div>
+	</div>
+	<div class="f-box2">Copyright © 1998 - 2018 Tencent. All Rights Reserved</div>
+</footer>
+</body>
+</html>

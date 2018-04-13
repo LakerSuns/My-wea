@@ -1,0 +1,811 @@
+.hide{
+	display: none;
+}
+.block{
+	display: block;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: #f4f4f4;
+	height: 15rem;
+}
+header{
+	width: 100%;
+	height: 4.7rem;
+	background: url('../img/screen.png') no-repeat center bottom, -webkit-linear-gradient(top,#3BBCFF,#47EAFF);
+    background-size: contain;
+    overflow: hidden;
+    /* position: fixed; */
+}
+.head-left{
+	width: 0.24rem;
+	height: 0.24rem;
+	float: left;
+	margin-top: 0.1rem;
+	/* background: red; */
+	margin-left: 0.14rem;
+}
+.head-left i{
+	font-size: 0.24rem;
+	float: left;
+	color: white;
+	margin-top: -0.12rem;
+}
+.head-right{
+	width: 0.3rem;
+	height: 0.3rem;
+	float: right;
+	margin-top: -0.25rem;
+	margin-right: 0.1rem;
+}
+.head-right i{
+	float: left;
+	font-size: 0.3rem;
+	color: white;
+}
+.city{
+	margin: 0 auto;
+	font-size: 0.3rem;
+	color: white;
+	line-height: 0.3rem;
+	text-align: center;
+	/* margin-left: 2.3rem; */
+	margin-top: 0.14rem;
+}
+.airbox{
+	width: 0.72rem;
+	height: 0.44rem;
+	background: #f1ab62;
+	border-radius: 0.08rem;
+	margin-left: 0.08rem;
+	margin-top: 0.29rem;
+}
+.airbox h1{
+	font-size: 0.14rem;
+	color: white;
+	text-align: center;
+	line-height: 0.22rem;
+	font-weight: normal;
+}
+.airbox h2{
+	font-size: 0.14rem;
+	color: white;
+	text-align: center;
+	line-height: 0.22rem;
+	font-weight: normal;
+}
+.temperature{
+	font-size: 0.48rem;
+	width: 0.88rem;
+	margin-left: 2.22rem;
+	color: #fff;
+	line-height: 0.58rem;
+}
+.condition{
+	font-size: 0.2rem;
+	color: #fff;
+	line-height: 0.32rem;
+	text-align: center;
+}
+.humidity{
+	width: 0.7rem;
+	height: 0.26rem;
+	margin: 0 auto;
+}
+.h-text{
+	font-size: 0.14rem;
+	color: #fff;
+	line-height: 0.26rem;
+	float: left;
+}
+.h-data{
+	font-size: 0.14rem;
+	color: #fff;
+	line-height: 0.26rem;
+	float: right;
+}
+.text1{
+	width: 1.73rem;
+	height: 0.42rem;
+	/* background: red; */
+	margin: 0 auto;
+	margin-top: 0.32rem;
+	font-size: 0.16rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.42rem;
+}
+.forecast{
+	width: 100%;
+	height: 1.02rem;
+	background: #fff;
+	border-bottom: 0.01rem solid #e4e4e4;
+	overflow: hidden;
+}
+.forecast1{
+	width: 4.61rem;
+	height: 0.52rem;
+	margin: 0 auto;
+	margin-top: 0.25rem;
+	display: flex;
+	font-size: 0.14rem;
+	color: #434343;
+}
+.forecast1-left{
+	width: 2.3rem;
+	height: 100%;
+	padding-right: 0.21rem;
+	box-sizing: border-box;
+	/* background: green; */
+	border-right: 0.01rem solid #f0f0f0;
+}
+.left-top{
+	width: 100%;
+	height: 0.26rem;
+}
+.today{
+	float: left;
+}
+.difference1{
+	float: right;
+	display: flex;
+}
+.difference1 span{
+	float: left;
+}
+.left-bottom{
+	width: 100%;
+	height: 0.26rem;
+}
+.left-bottom-cond{
+	float: left;
+}
+.tubiao1{
+    width: 0.26rem;
+	height: 0.26rem;
+    float: right;
+	background: url('../img/0.png') no-repeat center;
+	background-size: cover;
+}
+.forecast1-right{
+	width: 2.3rem;
+	height: 100%;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+}
+.right-top{
+	width: 100%;
+	height: 0.26rem;
+}
+.tomorrow{
+	float: left;
+}
+.difference2{
+	float: right;
+	margin-right: 0.2rem;
+	display: flex;
+}
+.difference2 span{
+	float: left;
+}
+.right-bottom{
+	width: 100%;
+	height: 0.26rem;
+}
+.right-bottom-cond{
+	float: left;
+}
+.tubiao2{
+	width: 0.3rem;
+	height: 0.3rem;
+    float: right;
+	margin-right: 0.2rem;
+	background: url('../img/1.png') no-repeat center;
+	background-size: cover;
+}
+.hours{
+	width: 100%;
+	height: 1.36rem;
+	background:#fff;
+	margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    overflow-x:auto;/* 超出的部分设置（水平方向）自动 */
+	border-bottom: 0.01rem solid #e4e4e4;
+	padding-top: 0.31rem;
+	box-sizing: border-box;
+}
+/* 为全屏的元素去除滚动条 */
+.hours::-webkit-scrollbar{
+	height: 0;
+}
+.wrap{
+	width: 20.28rem;
+	height: 0.77rem;
+    
+}
+.now{
+	width: 0.78rem;
+	height: 0.83rem;
+	float: left;
+}
+.wrap h2{
+	width: 0.78rem;
+	height: 0.2rem;
+    /* margin-top: 0.3rem; */
+    color: #a599b2;
+	font-size: 0.2rem;
+	font-weight: normal;
+	line-height: 0.2rem;
+	text-align: center;
+	float: left;
+}
+.wrap h3{
+	width: 0.78rem;
+	height: 0.2rem;
+    /* margin-top: 0.3rem; */
+    color: #a599b2;
+	font-weight: normal;
+	font-size: 0.2rem;
+	line-height: 0.2rem;
+	text-align: center;
+	float: left;
+}
+.tupian{
+	width: 0.32rem;
+	height: 0.32rem;
+	margin-top: .25rem;
+	margin-left: .22rem;
+	background: url('../img/30.png') no-repeat center;
+	background-size: cover;
+}
+.week{
+	width: 100%;
+	height: 3.65rem;/* 内填充后盒子的边框会被算到里面，需要为其增加两个像素的边框 */
+	border-top: 0.01rem solid #e4e4e4;
+	border-bottom: 0.01rem solid #e4e4e4;
+	padding-top: 0.25rem;
+	box-sizing: border-box;
+	overflow-x: auto;
+	background: #fff;
+}
+.week::-webkit-scrollbar{
+	height: 0;
+}
+.wrap1{
+	width: 6.56rem;
+	height: 3.37rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.con{
+	width: 0.82rem;
+	height: 100%;
+	/* 使得子元素不缩小 */
+	flex-shrink: 0;
+	display: flex;/* 父元素弹性布局 */
+	flex-wrap: wrap;   /* 换行 修改子元素的宽度*/
+	flex-direction: column;   /* 修改主轴方向为垂直方向 */
+	justify-content: space-between;   /* 设置主轴上的对齐方式为两端对齐 */
+}
+.weekday{
+	width: 0.82rem;
+	height: 0.15rem;
+	font-size: 0.14rem;
+	color: #b2b2b2;
+	text-align: center;
+	line-height: 0.15rem;
+}
+.date{
+	width: 100%;
+	height: 0.15rem;    
+	font-size: 0.14rem;
+	color: #b2b2b2;
+	text-align: center;
+}
+.date span{
+    font-size: 0.14rem;
+	color: #b2b2b2;
+	float: left;
+	line-height: 0.15rem;
+}
+.date span:first-child{
+	margin-left: 0.2rem;	
+}
+.con1{
+	width: 0.82rem;
+    height: 0.14rem;
+    font-size: 0.14rem;
+	color: #b2b2b2;
+	float: left;
+	line-height: 0.14rem;
+	text-align: center;
+}
+.sun{
+	width: 0.28rem;
+	height: 0.22rem;
+	margin: 0 auto;
+	background: url('../img/1.png') no-repeat center;
+	background-size: cover;
+}
+.highest{
+	width: 0.82rem;
+    height: 0.14rem;
+    font-size: 0.14rem;
+	color: #b2b2b2;
+	float: left;
+	line-height: 0.14rem;
+	text-align: center;
+}
+.lowest{
+	width: 0.82rem;
+    height: 0.14rem;
+    font-size: 0.14rem;
+	color: #b2b2b2;
+	float: left;
+	line-height: 0.14rem;
+	text-align: center;
+}
+.moon{
+	width: 0.28rem;
+	height: 0.22rem;
+	margin: 0 auto;
+	background: url('../img/10.png') no-repeat center;
+	background-size: cover;
+}
+.con2{
+	width: 0.82rem;
+    height: 0.14rem;
+    font-size: 0.14rem;
+	color: #b2b2b2;
+	line-height: 0.14rem;
+	float: left;
+	text-align: center;
+}.con3{
+	width: 0.82rem;
+    height: 0.14rem;
+    font-size: 0.14rem;
+	color: #b2b2b2;
+	line-height: 0.14rem;
+	text-align: center;
+	float: left;
+}.con4{
+	width: 0.82rem;
+    height: 0.14rem;
+    font-size: 0.14rem;
+	color: #b2b2b2;
+	line-height: 0.14rem;
+	text-align: center;
+	float: left;
+}
+/* 生活方式开始 */
+.lifestyle{
+	width: 4.98rem;
+	height: 1.88rem;
+	background: #fff;
+	margin-top: 0.1rem;
+	border: 0.01rem solid #e4e4e4;
+	overflow-x: auto;
+}
+.lifestyle::-webkit-scrollbar{
+	height: 0;
+}
+.wrap2{
+	width: 9.96rem;
+	height: 1.88rem;
+}
+.lifestyle a{
+    display: block;
+	width: 1.23rem;
+	height: 0.93rem;
+	border-bottom: 0.01rem solid #e4e4e4;
+	border-right: 0.01rem solid #e4e4e4;
+	overflow: hidden;
+	float: left;
+}
+.l-img1{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/car.png') no-repeat center;
+	background-size: cover;
+}.l-img2{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/coat.png') no-repeat center;
+	background-size: cover;
+}.l-img3{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/umbrella.png') no-repeat center;
+	background-size: cover;
+}.l-img4{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/medicine.png') no-repeat center;
+	background-size: cover;
+}.l-img5{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/travel.png') no-repeat center;
+	background-size: cover;
+}.l-img6{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/transport.png') no-repeat center;
+	background-size: cover;
+}.l-img7{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/aircondition.png') no-repeat center;
+	background-size: cover;
+}.l-img8{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/comfort.png') no-repeat center;
+	background-size: cover;
+}.l-img9{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/washcar.png') no-repeat center;
+	background-size: cover;
+}.l-img10{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/sports.png') no-repeat center;
+	background-size: cover;
+}.l-img11{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/ultraviolet.png') no-repeat center;
+	background-size: cover;
+}.l-img12{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/fishing.png') no-repeat center;
+	background-size: cover;
+}.l-img13{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/clothing.png') no-repeat center;
+	background-size: cover;
+}.l-img14{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/makeup.png') no-repeat center;
+	background-size: cover;
+}.l-img15{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/exercise.png') no-repeat center;
+	background-size: cover;
+}.l-img16{
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+	margin-top: 0.08rem;
+	background: url('../img/allergic.png') no-repeat center;
+	background-size: cover;
+}
+.lifestyle a h1{
+	width: 100%;
+	height: 0.2rem;
+	font-size: 0.14rem;
+	color: #999;
+	margin-top: 0.06rem;
+	text-align: center;
+	line-height: 0.2rem;
+}
+.lifestyle a h2{
+	width: 100%;
+	height: 0.18rem;
+	font-size: 0.12rem;
+	color: #999;
+	text-align: center;
+	line-height: 0.18rem;
+}
+.lifestyle a:nth-child(4n){
+	width: 1.25rem;
+	height: 0.93rem;
+	margin-right: 0;
+}
+.lifestyle a:nth-child(8)~a{
+	border-bottom:none;
+}
+/* 生活方式结束 */
+
+
+/* 城市景点定位 */
+.location{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	overflow-y: auto;
+	/*display: none;  使得布局好的城市景点定位先消失，等调用JS中事件后使其出现 */
+}
+.search{
+	width: 100%;
+	height: 0.45rem;
+	border-bottom: 0.01rem solid #eeeeee;
+	overflow: hidden;
+	display: flex;
+	padding-top: 0.07rem;
+	padding-left: 0.13rem;
+	box-sizing: border-box;
+	position: fixed;
+}
+.search a{
+	display: block;
+}
+.search-left{
+	width: 4.28rem;
+	height: 0.3rem;
+	background: #f2f2f2;
+	border-radius: 0.12rem;
+	display: flex;
+}
+.sosuo{
+	width: 0.15rem;
+	height: 0.15rem;
+	margin-left: 0.1rem;
+	margin-top: 0.08rem;
+	background: url('../img/sosuo.png') no-repeat center;
+	background-size: cover;
+}
+.sosuo-text{
+	width: 4rem;
+	height: 0.3rem;
+    font-size: 0.14rem;
+    line-height: 0.3rem;
+}
+#bt1{
+	width: 3rem;
+	height: 0.3rem;
+	margin-left: 0.1rem;
+	background: #f2f2f2;
+	border: none;
+}
+#bt1:focus{
+	outline: none;
+}
+#bt2{
+	width: 0.5rem;
+	height: 0.3rem;
+	background:red;
+	border: none;
+	float: right;
+	margin-right: 0.2rem;
+}
+#bt2:focus{
+	outline: none;
+}
+.search-right{
+	width: 0.59rem;
+	height: 0.3rem;
+	font-size: 0.14rem;
+	line-height: 0.3rem;
+	text-align: center;
+}
+.popcity{
+	width: 100%;
+	/* height: 2.18rem; */
+	padding-left: 0.13rem;
+	box-sizing: border-box;
+	margin-top: 0.45rem;
+	overflow: hidden;
+
+}
+.popcity h1{
+	display: block;
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.26rem;
+	color: #434343;
+	line-height: 0.5rem;
+    margin-top: 0.24rem;
+	overflow: hidden;
+
+}
+.second_citys{
+	width: 1.52rem;
+	height: 0.32rem;
+	background: #f2f2f2;
+	border-radius: 0.11rem;
+	font-size: 0.14rem;
+	color: #434343;
+	text-align: center;
+	line-height: 0.32rem;
+	margin-right: 0.09rem;
+	margin-top: 0.12rem;
+	float: left;
+}
+
+.remencity{
+	width: 100%;
+	height: 0.43rem;
+	/* overflow: hidden; */
+}
+.remencity span{
+	display: block;
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.26rem;
+	font-weight: bold;
+	color: #434343;
+	line-height: 0.5rem;
+	margin-top: 0.14rem;
+
+}
+.chengshi{
+	width: 1.52rem;
+	height: 0.32rem;
+	background: #f2f2f2;
+	border-radius: 0.11rem;
+	font-size: 0.14rem;
+	color: #434343;
+	text-align: center;
+	line-height: 0.32rem;
+	margin-right: 0.09rem;
+	margin-top: 0.12rem;
+	float: left;
+}
+
+
+/* 热门景点部分 */
+.popspot{
+	width: 100%;
+	height: auto;/* 
+	padding-left: 0.13rem;
+	box-sizing: border-box; */
+	overflow: hidden;
+}
+.remenspot{
+	width: 100%;
+	height: 0.43rem;
+	/* overflow: hidden; */
+}
+.remenspot span{
+	display: block;
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.26rem;
+	font-weight: bold;
+	color: #434343;
+	line-height: 0.5rem;
+	margin-top: 0.24rem;
+}
+.jingdian{
+	width: 1.52rem;
+	height: 0.32rem;
+	background: #f2f2f2;
+	border-radius: 0.11rem;
+	font-size: 0.14rem;
+	color: #434343;
+	text-align: center;
+	line-height: 0.32rem;
+	margin-right: 0.09rem;
+	margin-top: 0.12rem;
+	float: left;
+}
+footer{
+	width: 100%;
+	height: 0.54rem;
+	margin-top: 0.33rem;
+}
+.f-box1{
+	width: 100%;
+	height: 0.3rem;
+	display: flex;
+}
+.f-box1-left{
+	width: 1.8rem;
+	height: 0.3rem;
+	margin-left: 1.1rem;
+	font-size: 0.14rem;
+	color: #b2b2b2;
+	text-align: center;
+	line-height: 0.3rem;
+}
+.f-box1-right{
+	width: 1.22rem;
+	height: 0.2rem;
+	margin-top: 0.05rem;font-size: 0.12rem;
+	color: #b2b2b2;
+	text-align: center;
+	line-height: 0.2rem;
+}
+.f-box2{
+	width: 100%;
+	height: 0.24rem;
+	font-size: 0.12rem;
+	color: #b2b2b2;
+	text-align: center;
+	line-height: 0.24rem;
+}
+.about{
+	width: 100%;
+	height: 1.9rem;
+	border: 0.01rem solid #e4e4e4;
+	/* 自定义盒子模型 */
+	box-sizing: border-box;
+	margin-top: 0.1rem;
+	overflow-x: auto;
+}
+.about::-webkit-scrollbar{
+	height: 0;
+}
+.wrap3{
+	width: 10rem;
+	height: 1.88rem;
+}
+.about li{
+	width: 12.5%;
+	height: 0.94rem;
+	float: left;
+	background: #fff;
+	border-right: 0.01rem solid #e4e4e4;
+	border-bottom: 0.01rem solid #e4e4e4;
+	box-sizing: border-box;
+}
+.about li:nth-child(4n){
+	border-right:none; 
+}
+.about li:nth-child(8)~li{
+	border-bottom: none;
+}
+ .about li h1{
+	width: 100%;
+	height: 0.2rem;
+	font-size: 0.14rem;
+	color: #999;
+	margin-top: 0.06rem;
+	text-align: center;
+	line-height: 0.2rem;
+}
+.about li h2{
+	width: 100%;
+	height: 0.18rem;
+	font-size: 0.12rem;
+	color: #999;
+	text-align: center;
+	line-height: 0.18rem;
+}
